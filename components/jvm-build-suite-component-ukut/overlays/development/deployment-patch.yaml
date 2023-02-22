@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-ukut
+  namespace: jvm-build-eojr-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:ae162dc33688d6cc0d7096efa6b0da4c2acb459bfb31a6fbbea7a1abb314d53c
+        name: container-image
+        resources: {}
+status: {}
