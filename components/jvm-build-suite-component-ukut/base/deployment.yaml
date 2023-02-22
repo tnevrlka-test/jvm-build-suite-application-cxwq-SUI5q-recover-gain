@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: jvm-build-suite-component-ukut
     spec:
       containers:
-      - image: quay.io/rh_ee_tnevrlka/test-images:090f849f07c840aa8a9b33092a677300
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:ae162dc33688d6cc0d7096efa6b0da4c2acb459bfb31a6fbbea7a1abb314d53c
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
