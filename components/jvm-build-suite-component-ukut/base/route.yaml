@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: jvm-build-suite-component-ukut
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: jvm-build-suite-component-ukut
+    app.kubernetes.io/part-of: jvm-build-suite-application-cxwq
+  name: jvm-build-suite-componentopwo
+  namespace: jvm-build-eojr-tenant
+spec:
+  port:
+    targetPort: 8081
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: jvm-build-suite-component-ukut
+    weight: 100
+status: {}
